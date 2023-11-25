@@ -1,0 +1,46 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+}
+header {
+    background-color: #EAC926; 
+    width: 90vw;  
+}
+.burguer-menu {background-color: #03264C;
+color: white;
+width: 2em;
+height: 2em;
+}
+
+main{
+    width: 90vw;
+    }
+.precio {font-size: 18 px;}
+.descuentos {font-size: 16 px;}
+.descripciones {font-size: 16 px;}
+.titulo{font-size: 24px;}
+.producto{
+    width: 90vw;
+    padding: 15px;
+    border-top: 1px;
+    border-style: solid;
+    border-color: #ebebeb;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.titulodepie {
+    font-size: 24px; 
+}
+
+#icono {
+    width: 2em;
+    height: 2em;
+    color: #1259c3;
+    margin-bottom: 10px;
+}
