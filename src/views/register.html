@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <form action="resultado.html" method="POST">
+        <p>
+          <label>Nombre y apellido</label>
+          <input type="text" name="nombre" required>
+        </p>
+        <p>
+            <label>Nombre de usuari@</label>
+            <input type="text" name="usuario" required>
+          </p>
+        <p>
+          <label>E-mail:</label>
+          <input type="email" name="email" required>
+        </p>
+        <p>
+            <label>Fecha de nacimiento</label>
+            <input type="date" name="fecha" value="" required>
+        </p>
+        <p>
+            <label> domicilio</label>
+            <input type="text" name="domicilio" required>
+        </p>
+        <p>
+            <label> ¿Qué deseas?</label>
+            <input type="text" name="domicilio" required>
+            <label>
+                <input type="radio" name="domicilio" value="mascota"> 
+                Vender
+            </label>
+            <label>
+                <input type="radio" name="domicilio" value="mascota"> 
+                Comprar
+            </label>
+        </p>
+        <select name="categorías de interés">
+            <option value="1"> Electro </option>
+            <option value="2"> Moda </option>
+            <option value="3"> Hogar </option>
+            <option value="4"> Juguetería</option>
+            <option value="5"> vida sana</option>
+          </select>
+  
+        <button type="submit"> Enviar </button>
+        <button type="reset"> Borrar </button>
+      </form>
+</body>
+</html>

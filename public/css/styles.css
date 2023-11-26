@@ -2,29 +2,134 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box; 
 }
+
 header {
-    background-color: #EAC926; 
-    width: 90vw;  
+    background-color: #EAC926;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 16px;
 }
 .burguer-menu {background-color: #03264C;
 color: white;
 width: 2em;
-height: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px}
+
+.buscador {
+    border-radius: 4px;
+    flex-grow: 0.50;
+    align-self: center;
+}
+.input{
+    border-radius: 10px;
+}
+.lupa {
+    border-radius: 10px;
+}
+.encavezado{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.logo {
+    flex-grow: 0.50;
+}
+.anunciocompra{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    flex-grow: 0;
+    
+}
+.barrahome{
+    display: none;
+    flex-wrap: wrap;
+}
+.site {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+
+}
+.site2 {
+    flex-grow: 0.05;
+}
+.login {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: end; 
+}
+.login2{
+    flex-grow: 0.10;
+    display: flex;
+    align-items: center;
 }
 
-main{
-    width: 90vw;
-    }
-.precio {font-size: 18 px;}
-.descuentos {font-size: 16 px;}
-.descripciones {font-size: 16 px;}
-.titulo{font-size: 24px;}
-.producto{
-    width: 90vw;
-    padding: 15px;
+.ulimaVisita{
+    display: flex;
+    flex-wrap: wrap;
+}
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.precio {
+    font-size: 18 px;
+    font-style: normal;
+    width: 30%;
+}
+.descuentos {
+    font-size: 16 px;
+    color: #39b54a;
+    font-style: normal;
+    width: 70%;
+}
+.preciodescuento{
+    display: flex;
+    flex-wrap: wrap;
+}
+.descripciones {
+    font-size: 16 px;
+    display: none;
+}
+.titulo{font-size: 24px;
+width: 100%;}
+.carrito{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+}
+.cajaprecio{
     border-top: 1px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
     border-style: solid;
     border-color: #ebebeb;
+}
+.producto {
+    border-style: solid;
+    border-color: #ebebeb;
+    padding: 15px;
+}
+.ofertas{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer{
@@ -39,8 +144,26 @@ footer{
 }
 
 #icono {
-    width: 2em;
-    height: 2em;
-    color: #1259c3;
-    margin-bottom: 10px;
+    margin: 5px;
+}
+
+@media (min-width: 361px) {
+    .producto{ box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 50%;}
+    .descripciones { display: block;}
+    .burguer-menu { display: none;}
+    .barrahome {display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        background-color: #EAC926;
+    }
+    .buscador{flex-grow: 0.20;}
+    .logo {flex-grow: 0.40;}
+    .anunciocompra {flex-grow: 0.20;}
+    }
+@media (min-width: 769px){
+    .producto {
+        width: 25%;
+    }
 }
