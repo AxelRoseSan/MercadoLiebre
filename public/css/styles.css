@@ -1,6 +1,8 @@
 *{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -9,6 +11,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding-block: 16px;
+    padding: 16px;
 }
 .burguer-menu {background-color: #03264C;
 color: white;
@@ -26,9 +29,11 @@ width: 2em;
 }
 .input{
     border-radius: 10px;
+    padding: 8px;
 }
 .lupa {
     border-radius: 10px;
+    padding: 8px;
 }
 .encavezado{
     display: flex;
@@ -58,6 +63,10 @@ width: 2em;
 }
 .site2 {
     flex-grow: 0.05;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-style: normal;
 }
 .login {
     display: flex;
@@ -74,33 +83,41 @@ width: 2em;
 .ulimaVisita{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
 }
 img {
     width: 100%;
     height: auto;
     max-width: 100%;
 }
-.precio {
-    font-size: 18 px;
-    font-style: normal;
-    width: 30%;
-}
-.descuentos {
-    font-size: 16 px;
-    color: #39b54a;
-    font-style: normal;
-    width: 70%;
-}
-.preciodescuento{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .descripciones {
     font-size: 16 px;
     display: none;
 }
 .titulo{font-size: 24px;
 width: 100%;}
+
+.producto {
+    border-style: solid;
+    border-color: #ebebeb;
+    padding: 15px;
+    min-width: 250px;
+    max-width: 280px;
+}
+.cajaprecio{
+    border-top: 1px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: #ebebeb;
+    position: relative;
+}
 .carrito{
     color: #39b54a;
     display: block;
@@ -112,24 +129,36 @@ width: 100%;}
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;
-    right: 10%;
+    right: 10px;
+    top: -16px;
 }
-.cajaprecio{
-    border-top: 1px;
-    border-bottom: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-style: solid;
-    border-color: #ebebeb;
+.preciodescuento{
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
-.producto {
-    border-style: solid;
-    border-color: #ebebeb;
-    padding: 15px;
+.precio {
+    font-size: 18 px;
+    font-style: normal;
+
 }
+.descuentos {
+    font-size: 16 px;
+    color: #39b54a;
+    font-style: normal;
+    
+}
+
+
 .ofertas{
     display: flex;
     flex-wrap: wrap;
+    min-width: 250px;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
 }
 
 footer{
@@ -137,6 +166,7 @@ footer{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 16px;
 }
 
 .titulodepie {
@@ -147,9 +177,9 @@ footer{
     margin: 5px;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 768px) {
     .producto{ box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    width: 50%;}
+}
     .descripciones { display: block;}
     .burguer-menu { display: none;}
     .barrahome {display: block;
@@ -161,9 +191,19 @@ footer{
     .buscador{flex-grow: 0.20;}
     .logo {flex-grow: 0.40;}
     .anunciocompra {flex-grow: 0.20;}
+    .ulimaVisita {
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-@media (min-width: 769px){
+    .ofertas{
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    }
+@media (min-width: 1024px){
     .producto {
-        width: 25%;
+    
     }
 }

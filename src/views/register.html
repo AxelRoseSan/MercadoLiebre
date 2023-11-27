@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <script src="https://kit.fontawesome.com/3cefa041a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <form action="resultado.html" method="POST">
@@ -29,7 +30,6 @@
         </p>
         <p>
             <label> ¿Qué deseas?</label>
-            <input type="text" name="domicilio" required>
             <label>
                 <input type="radio" name="domicilio" value="mascota"> 
                 Vender
@@ -39,13 +39,17 @@
                 Comprar
             </label>
         </p>
+        <p>
+            <label>Foto de usuario</label>
+            <input type="file" name="fotos" accept="jpg png" multiple>
+        </p>
         <select name="categorías de interés">
             <option value="1"> Electro </option>
             <option value="2"> Moda </option>
             <option value="3"> Hogar </option>
             <option value="4"> Juguetería</option>
             <option value="5"> vida sana</option>
-          </select>
+        </select>
   
         <button type="submit"> Enviar </button>
         <button type="reset"> Borrar </button>
