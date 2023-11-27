@@ -173,8 +173,12 @@ footer{
     font-size: 24px; 
 }
 
+#icono1 {
+    margin: 5px;
+}
 #icono {
     margin: 5px;
+    color: #1259c3;
 }
 
 @media (min-width: 768px) {
@@ -202,8 +206,6 @@ footer{
         justify-content: center;
     }
     }
-@media (min-width: 1024px){
-    .producto {
+@media (min-width: 1023px){
     
-    }
 }
